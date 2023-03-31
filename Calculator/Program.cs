@@ -5,50 +5,46 @@ namespace Calculator
     class Program
     {
         static void Main(string[] args)
-        {
-            double a, b, x;
-            Console.WriteLine("Enter Things");
-        Label:
+        {            
+            Console.WriteLine("Enter the operation (example: 5 - 2)");
             string[] num = Console.ReadLine().Split(' ');
-            if (num.Length == 3)
+            while (num.Length != 3)
             {
-                a = int.Parse(num[0]);
-                b = int.Parse(num[2]);
+                Console.WriteLine("Enter the operation (example: 5 - 2)");
+                num = Console.ReadLine().Split(" ");
+            }
+                double number1, number2, operationResult;
+                number1 = int.Parse(num[0]);
+                number2 = int.Parse(num[2]);
                 if (num[1].Equals("+"))
                 {
-                    x = a + b;
-                    Console.WriteLine(x);
+                    operationResult = number1 + number2;
+                    Console.WriteLine(operationResult);
                 }
                 else if (num[1].Equals("-"))
                 {
-                    x = a - b;
-                    Console.WriteLine(x);
+                    operationResult = number1 - number2;
+                    Console.WriteLine(operationResult);
                 }
                 else if (num[1].Equals("*"))
                 {
-                    x = a * b;
-                    Console.WriteLine(x);
+                    operationResult = number1 * number2;
+                    Console.WriteLine(operationResult);
                 }
                 else if (num[1].Equals("/") || num[2].Equals("\""))
                 {
-                    if (b == 0)
+                    if (number2 == 0)
                     {
                         Console.WriteLine("Zero divide");
                     }
                     else
                     {
-                        x = a / b;
-                        Console.WriteLine(x);
+                        operationResult = number1 / number2;
+                        Console.WriteLine(operationResult);
                     }
                 }
                 Console.WriteLine("Yay, it works!");
                 Console.Read();
-            }
-            else
-            {
-                Console.WriteLine("Please, enter all numbers");
-                goto Label;
-            }
         }
     }
 }
