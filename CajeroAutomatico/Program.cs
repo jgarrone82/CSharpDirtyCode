@@ -24,13 +24,13 @@ namespace CajeroAutomatico
                             Console.WriteLine("");
                             Console.WriteLine("______________________________________________________________________");
                             Console.WriteLine("");
-                            Console.WriteLine("             INGRESE EL MONTO QUE DECEA DEPOSITAR  ");
+                            Console.WriteLine("             INGRESE EL MONTO QUE DESEA DEPOSITAR  ");
                             Console.WriteLine("______________________________________________________________________");
                             Console.WriteLine("");
                             deposito = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine("");
                             saldo = saldo + deposito;
-                            Console.WriteLine("         TU MONTO DE DINERO SE AH GUARDADO CORRECTAMENTE");
+                            Console.WriteLine("         TU MONTO DE DINERO SE HA GUARDADO CORRECTAMENTE");
 
                         }
                         break;
@@ -54,7 +54,7 @@ namespace CajeroAutomatico
                             Console.WriteLine("");
                             Console.WriteLine("________________________________________________________________________");
                             Console.WriteLine("");
-                            Console.WriteLine("                     INGRESE EL MONTO QUE DECEE RETIRAR ");
+                            Console.WriteLine("                     INGRESE EL MONTO QUE DESEE RETIRAR ");
                             Console.WriteLine("________________________________________________________________________");
                             Console.WriteLine("");
                             Console.WriteLine("");
@@ -70,7 +70,7 @@ namespace CajeroAutomatico
                             //Mensaje de agradecimiento al final
                             Console.WriteLine("");
                             Console.WriteLine("           GRACIAS POR USAR EL SISTEMA DE CAJERO");
-                            Console.WriteLine("             AUTOMATICO MANICH, BUELBA PRONTO");
+                            Console.WriteLine("             AUTOMATICO MANICH, VUELVA PRONTO");
                         }
                         break;
                 }
@@ -89,13 +89,13 @@ namespace CajeroAutomatico
         {
             Console.WriteLine("______________________________________________________________________");
             Console.WriteLine("                                                                  ");
-            Console.WriteLine("                   BIENBENIDO AL CAJERO AUTOMATICO");
+            Console.WriteLine("                   BIENVENIDO AL CAJERO AUTOMATICO");
             Console.WriteLine("______________________________________________________________________");
             Console.WriteLine("");
-            Console.WriteLine("      1.- DECEA DEPOSITAR");
-            Console.WriteLine("      2.- DECEA CONSULTAR SU SALDO");
-            Console.WriteLine("      3.- DECEA RETIRAR");
-            Console.WriteLine("      4.- DECEA SALIR");
+            Console.WriteLine("      1.- DESEA DEPOSITAR");
+            Console.WriteLine("      2.- DESEA CONSULTAR SU SALDO");
+            Console.WriteLine("      3.- DESEA RETIRAR");
+            Console.WriteLine("      4.- DESEA SALIR");
             Console.WriteLine("");
             Console.WriteLine("______________________________________________________________________");
             Console.WriteLine("");
